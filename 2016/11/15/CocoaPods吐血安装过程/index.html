@@ -71,16 +71,22 @@
 
 
 
-<meta name="description" content="Easy dosen&apos;t enter into grown-up life.">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Ennnnnn7 Blog">
-<meta property="og:url" content="http://yoursite.com/archives/index.html">
+<meta name="description" content="在之前工作中，第三方框架都是直接拖到工程中，这样太繁琐了，工作量大不说，在第三方代码版本管理也是一个很头疼的问题。后来采用了CocoaPods，一切就变得那么简单了，新项目虽然不大，但是自己还是使用了CocoaPods，这里把自己吐血安装的过程总结一下，真的是吐血呀。文章默认电脑是第一次安装CocoaPods，内容是按照安装的过程以及遇到的问题和解决方法这种方式来描述的，我觉得这样比最后总结问题">
+<meta property="og:type" content="article">
+<meta property="og:title" content="CocoaPods吐血安装过程">
+<meta property="og:url" content="http://yoursite.com/2016/11/15/CocoaPods吐血安装过程/index.html">
 <meta property="og:site_name" content="Ennnnnn7 Blog">
-<meta property="og:description" content="Easy dosen&apos;t enter into grown-up life.">
+<meta property="og:description" content="在之前工作中，第三方框架都是直接拖到工程中，这样太繁琐了，工作量大不说，在第三方代码版本管理也是一个很头疼的问题。后来采用了CocoaPods，一切就变得那么简单了，新项目虽然不大，但是自己还是使用了CocoaPods，这里把自己吐血安装的过程总结一下，真的是吐血呀。文章默认电脑是第一次安装CocoaPods，内容是按照安装的过程以及遇到的问题和解决方法这种方式来描述的，我觉得这样比最后总结问题">
 <meta property="og:locale" content="zh-Hans">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/1762316-7a5f0ba00974c61c.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/1762316-f484b717aaa76278.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/1762316-5449f245971a23ae.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/1762316-e70a3cabcf9e1935.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:updated_time" content="2017-12-19T01:27:00.134Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Ennnnnn7 Blog">
-<meta name="twitter:description" content="Easy dosen&apos;t enter into grown-up life.">
+<meta name="twitter:title" content="CocoaPods吐血安装过程">
+<meta name="twitter:description" content="在之前工作中，第三方框架都是直接拖到工程中，这样太繁琐了，工作量大不说，在第三方代码版本管理也是一个很头疼的问题。后来采用了CocoaPods，一切就变得那么简单了，新项目虽然不大，但是自己还是使用了CocoaPods，这里把自己吐血安装的过程总结一下，真的是吐血呀。文章默认电脑是第一次安装CocoaPods，内容是按照安装的过程以及遇到的问题和解决方法这种方式来描述的，我觉得这样比最后总结问题">
+<meta name="twitter:image" content="http://upload-images.jianshu.io/upload_images/1762316-7a5f0ba00974c61c.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
 
 
 
@@ -110,13 +116,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/archives/"/>
+  <link rel="canonical" href="http://yoursite.com/2016/11/15/CocoaPods吐血安装过程/"/>
 
 
 
 
 
-  <title>归档 | Ennnnnn7 Blog</title>
+  <title>CocoaPods吐血安装过程 | Ennnnnn7 Blog</title>
   
 
 
@@ -135,7 +141,7 @@
     
   
 
-  <div class="container sidebar-position-left page-archive">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -243,416 +249,237 @@
           <div id="content" class="content">
             
 
+  <div id="posts" class="posts-expand">
+    
+
+  
+
   
   
   
-  <div class="post-block archive">
-    <div id="posts" class="posts-collapse">
-      <span class="archive-move-on"></span>
 
-      <span class="archive-page-counter">
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2016/11/15/CocoaPods吐血安装过程/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="刘杰">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/head.jpeg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Ennnnnn7 Blog">
+    </span>
+
+    
+      <header class="post-header">
+
         
         
+          <h1 class="post-title" itemprop="name headline">CocoaPods吐血安装过程</h1>
         
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2016-11-15T17:42:55+08:00">
+                2016-11-15
+              </time>
+            
+
+            
+
+            
+          </span>
+
           
-        
-        嗯..! 目前共计 11 篇日志。 继续努力。
-      </span>
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/工具/" itemprop="url" rel="index">
+                    <span itemprop="name">工具</span>
+                  </a>
+                </span>
 
-      
-
-        
-        
-        
-
-        
+                
+                
+              
+            </span>
           
-          <div class="collection-title">
-            <h1 class="archive-year" id="archive-year-2017">2017</h1>
-          </div>
-        
-        
 
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2017/12/07/状态码301与302/" itemprop="url">
-              
-                <span itemprop="name">状态码301与302</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2017-12-07T11:15:11+08:00"
-              content="2017-12-07" >
-          12-07
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-      
-
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2017/09/05/导航栏从透明状态切换为背景图片/" itemprop="url">
-              
-                <span itemprop="name">导航栏从透明状态切换为背景图片</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2017-09-05T11:11:03+08:00"
-              content="2017-09-05" >
-          09-05
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-      
-
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2017/07/03/项目中集成QQ登录与分享/" itemprop="url">
-              
-                <span itemprop="name">项目中集成QQ登录与分享</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2017-07-03T10:58:50+08:00"
-              content="2017-07-03" >
-          07-03
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-      
-
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2017/05/31/WWDC-2014-Session-302-The-New-iTunes-Connect/" itemprop="url">
-              
-                <span itemprop="name">WWDC 2014 - Session 302 The New iTunes Connect</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2017-05-31T10:39:10+08:00"
-              content="2017-05-31" >
-          05-31
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-      
-
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2017/04/01/动态修改APP图标/" itemprop="url">
-              
-                <span itemprop="name">动态修改APP图标</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2017-04-01T10:30:43+08:00"
-              content="2017-04-01" >
-          04-01
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-      
-
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2017/02/08/另类的APP常驻——UIStateRestoration/" itemprop="url">
-              
-                <span itemprop="name">另类的APP常驻——UIStateRestoration</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2017-02-08T10:20:48+08:00"
-              content="2017-02-08" >
-          02-08
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-      
-
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2017/01/20/UITableView分割线顶头/" itemprop="url">
-              
-                <span itemprop="name">UITableView分割线顶头</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2017-01-20T10:13:11+08:00"
-              content="2017-01-20" >
-          01-20
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-      
-
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2017/01/17/使用WKWebView访问Https/" itemprop="url">
-              
-                <span itemprop="name">使用WKWebView访问Https</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2017-01-17T09:34:43+08:00"
-              content="2017-01-17" >
-          01-17
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-      
-
-        
-        
-        
-
-        
           
-          <div class="collection-title">
-            <h1 class="archive-year" id="archive-year-2016">2016</h1>
-          </div>
-        
-        
+            
+          
 
-        
+          
+          
 
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
+          
 
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2016/11/15/CocoaPods吐血安装过程/" itemprop="url">
-              
-                <span itemprop="name">CocoaPods吐血安装过程</span>
-              
-            </a>
-        
-      </h2>
+          
 
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2016-11-15T17:42:55+08:00"
-              content="2016-11-15" >
-          11-15
-        </time>
-      </div>
+          
 
-    </header>
-  </article>
+        </div>
+      </header>
+    
 
-
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
 
       
-
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2016/08/18/怪诞行为学/" itemprop="url">
-              
-                <span itemprop="name">怪诞行为学</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2016-08-18T17:21:48+08:00"
-              content="2016-08-18" >
-          08-18
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
       
 
+      
+        <blockquote>
+<p>在之前工作中，第三方框架都是直接拖到工程中，这样太繁琐了，工作量大不说，在第三方代码版本管理也是一个很头疼的问题。后来采用了CocoaPods，一切就变得那么简单了，新项目虽然不大，但是自己还是使用了CocoaPods，这里把自己吐血安装的过程总结一下，真的是吐血呀。<br>文章默认电脑是第一次安装CocoaPods，内容是按照安装的过程以及遇到的问题和解决方法这种方式来描述的，我觉得这样比最后总结问题更直接一些。<br>PS.友情提示一下，安装CocoaPods一定要保持良好的网速。因为自己在安装过程中公司网速影响了好多，回家之后网速快了，问题也就没了。。。</p>
+</blockquote>
+<a id="more"></a>
+<h2 id="一、什么是CocoaPods"><a href="#一、什么是CocoaPods" class="headerlink" title="一、什么是CocoaPods"></a>一、什么是CocoaPods</h2><p>CocoaPods是一款第三方代码库的依赖管理工具，它可以在开发OS X或者iOS应用程序过程中对第三方框架进行搞笑的控制管理。这样开发者在配置成功CocoaPods之后，可以通过简单的命令就可以管理第三方库。而且，目前大部分开源类库都已支持CocoaPods。<br><img src="http://upload-images.jianshu.io/upload_images/1762316-7a5f0ba00974c61c.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="CocoaPods"></p>
+<h2 id="二、安装CocoaPods"><a href="#二、安装CocoaPods" class="headerlink" title="二、安装CocoaPods"></a>二、安装CocoaPods</h2><p>我是通过<code>终端</code>来安装的，打开<strong>Mac终端</strong>输入命令行来安装CocoaPods。</p>
+<ol>
+<li><p>输入命令<code>sudo gem install cocoapods</code><br>【解释】：这行命令是安装CocoaPods的命令。<br>【可能出现的问题】：由于CocoaPods是采用Ruby实现的，所以Mac必须有Ruby环境。Ruby的默认源使用的是<code>cocoapods.org</code>,此网址在国内访问会出现问题。</p>
+</li>
+<li><p>修改Ruby源</p>
+<ul>
+<li>移除之前的Ruby路径<code>gem sources --remove https://rubygems.org/</code></li>
+<li>更换新的路径<br>这里要说明一下：之前是添加淘宝镜像<code>gem sources -a https://ruby.taobao.org</code>。但是目前淘宝的镜像已经停止更新了，<a href="https://ruby.taobao.org/" target="_blank" rel="noopener">停止更新公告</a><br><img src="http://upload-images.jianshu.io/upload_images/1762316-f484b717aaa76278.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="公告截图"></li>
+</ul>
+</li>
+</ol>
+<p>良心的淘宝当然给了我们解决方法：</p>
+<ol>
+<li>添加Ruby China的镜像<code>gem sources --add https://gems.ruby-china.org/</code></li>
+<li>由于我是第一次安装，之前已经移除了系统中当前的镜像，所以不用像<a href="https://ruby.taobao.org/" target="_blank" rel="noopener">链接</a>内的方法移除当前镜像；<br><img src="http://upload-images.jianshu.io/upload_images/1762316-5449f245971a23ae.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="官方推荐方法"><ul>
+<li>检查当前镜像<code>gem sources -l</code>,确保只有<strong>gems.ruby-chaina.org</strong></li>
+<li>输入命令<code>gem install rails</code>（这里需要一段时间）<br><img src="http://upload-images.jianshu.io/upload_images/1762316-e70a3cabcf9e1935.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="再次确定当前镜像"></li>
+</ul>
+</li>
+<li>再次输入<code>sudo gem install cocoapods</code></li>
+<li>输入<code>pod setup</code><br>如果没什么问题你就安装CocoaPods成功了，如何检查是否安装成功呢：<ul>
+<li>终端输入<code>pod --version</code>,显示出版本即为成功；</li>
+<li>终端输入<code>pod repo list</code>,若结果为<code>0 repos</code>时说明没有安装成功。</li>
+</ul>
+</li>
+</ol>
+<h2 id="三、可能出现的问题"><a href="#三、可能出现的问题" class="headerlink" title="三、可能出现的问题"></a>三、可能出现的问题</h2><ul>
+<li>Q：<code>ERROR：while executing gem ...(ERROR::EPERM)
+Operation not permitted - /usr/bin/pod</code><br>A：Stackoverflow上的解释是：<strong>This is happening because Apple has enabled rootless on the new install</strong>，也就是说在OS X EI Capitan（10.11）系统上苹果已经启动了无根的安装。在终端重新输入<code>sudo gem install -n /usr/local/bin cocoapods</code></li>
+</ul>
+<ul>
+<li><p>Q:<code>Error installing pods:active support requires Ruby version &gt;= 2.2.2</code><br>A:需要Ruby版本不小于2.2.2。解决方法我参照了<a href="http://www.cnblogs.com/Mrliheng/p/5665894.html" target="_blank" rel="noopener">Ruby环境更新</a>这篇文章。</p>
+</li>
+<li><p>Q：终端出现<code>Setting up CocoaPods master repo</code>之后没有任何变化<br>A：说明CocoaPods正在将它的信息下载到 ~/.cocoapods中（这一步是很费时间的，等输出Setup completed 安装完成啦）<br>PS.可以重新打开另一个终端，输入 <code>cd ~/.cocoapods</code>进入<strong>cocoapods文件夹</strong>——&gt;输入`du -sh *查看进度。这一步一点要保证网速，这一步一定要保证网速，这一步一定要保证网速。</p>
+</li>
+<li><p>Q:<code>pod setup</code>时出现以下错误：</p>
+<pre><code>[!] /usr/bin/git clone https://github.com/CocoaPods/Specs.git master
+Cloning into &apos;master&apos;...
+error: RPC failed; curl 56 SSLRead() return error -36
+fatal: The remote end hung up unexpectedly
+fatal: early EOF
+fatal: index-pack failed
+You can try adding it manually in \`~/.cocoapods/repos\` or via \`pod repo add\`.
+</code></pre><p>A:重新安装（其实我就是这样安装成功的）：<br>首先，删除.cocoapods目录，在终端输入：<code>sudo rm -rf ~/.cocoapods/</code><br>然后，重新下载安装，在终端输入命令：<code>pod setup</code></p>
+</li>
+<li><p>Q：出现下面报错时：</p>
+<pre><code>ERROR:  While executing gem ... (TypeError) no implicit conversion of nil into String
+</code></pre><p>A：更新gem <code>sudo gem update --system</code></p>
+</li>
+</ul>
+<h2 id="四、使用CocoaPods"><a href="#四、使用CocoaPods" class="headerlink" title="四、使用CocoaPods"></a>四、使用CocoaPods</h2><ol>
+<li>终端中<code>cd</code>到项目所在路径，创建<strong>Podfile</strong><br><code>vim Podfile</code></li>
+<li><p>按下<code>i</code>键进入输入状态，在<code>Podfile</code>文件里输入以下文字：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">platform :ios, &apos;8.0&apos;</span><br><span class="line">target &apos;Your_App_Name&apos; do</span><br><span class="line">pod &apos;AFNetworking&apos;, &apos;~&gt;3.0&apos;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>按下esc键退出输入。然后保存退出，命令是:wq。你当然可以使用vim之外的编辑软件来编辑Podfile文件。</p>
+<blockquote>
+<p>注：cocoapods-1.0.0.beta版本后规定Podfile文件必须如上所示（加target）</p>
+</blockquote>
+</li>
+<li>终端cd到你的项目所在目录下执行如下命令来利用CocoPods下载第三方库：<br><code>pod install</code></li>
+</ol>
+<h2 id="五、参考文章"><a href="#五、参考文章" class="headerlink" title="五、参考文章"></a>五、参考文章</h2><ul>
+<li><a href="http://www.jianshu.com/p/0cea9006c0cb" target="_blank" rel="noopener">iOS的库依赖管理工具CocoaPods</a></li>
+<li><a href="http://www.jianshu.com/p/0fdc6e7d70f9" target="_blank" rel="noopener">iOS–cocoapods安装(为走过的坑留个纪念)</a></li>
+</ul>
+
+      
     </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2016/08/18/怪诞行为学/" rel="next" title="怪诞行为学">
+                <i class="fa fa-chevron-left"></i> 怪诞行为学
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2017/01/17/使用WKWebView访问Https/" rel="prev" title="使用WKWebView访问Https">
+                使用WKWebView访问Https <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
   </div>
   
   
   
-
-  
-  <nav class="pagination">
-    <span class="page-number current">1</span><a class="page-number" href="/archives/page/2/">2</a><a class="extend next" rel="next" href="/archives/page/2/"><i class="fa fa-angle-right"></i></a>
-  </nav>
+  </article>
 
 
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -660,6 +487,10 @@
 
 
           
+
+  
+
+
 
         </div>
         
@@ -680,8 +511,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -752,6 +592,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#一、什么是CocoaPods"><span class="nav-number">1.</span> <span class="nav-text"><a href="#&#x4E00;&#x3001;&#x4EC0;&#x4E48;&#x662F;CocoaPods" class="headerlink" title="&#x4E00;&#x3001;&#x4EC0;&#x4E48;&#x662F;CocoaPods"></a>&#x4E00;&#x3001;&#x4EC0;&#x4E48;&#x662F;CocoaPods</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#二、安装CocoaPods"><span class="nav-number">2.</span> <span class="nav-text"><a href="#&#x4E8C;&#x3001;&#x5B89;&#x88C5;CocoaPods" class="headerlink" title="&#x4E8C;&#x3001;&#x5B89;&#x88C5;CocoaPods"></a>&#x4E8C;&#x3001;&#x5B89;&#x88C5;CocoaPods</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#三、可能出现的问题"><span class="nav-number">3.</span> <span class="nav-text"><a href="#&#x4E09;&#x3001;&#x53EF;&#x80FD;&#x51FA;&#x73B0;&#x7684;&#x95EE;&#x9898;" class="headerlink" title="&#x4E09;&#x3001;&#x53EF;&#x80FD;&#x51FA;&#x73B0;&#x7684;&#x95EE;&#x9898;"></a>&#x4E09;&#x3001;&#x53EF;&#x80FD;&#x51FA;&#x73B0;&#x7684;&#x95EE;&#x9898;</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#四、使用CocoaPods"><span class="nav-number">4.</span> <span class="nav-text"><a href="#&#x56DB;&#x3001;&#x4F7F;&#x7528;CocoaPods" class="headerlink" title="&#x56DB;&#x3001;&#x4F7F;&#x7528;CocoaPods"></a>&#x56DB;&#x3001;&#x4F7F;&#x7528;CocoaPods</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#五、参考文章"><span class="nav-number">5.</span> <span class="nav-text"><a href="#&#x4E94;&#x3001;&#x53C2;&#x8003;&#x6587;&#x7AE0;" class="headerlink" title="&#x4E94;&#x3001;&#x53C2;&#x8003;&#x6587;&#x7AE0;"></a>&#x4E94;&#x3001;&#x53C2;&#x8003;&#x6587;&#x7AE0;</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -892,6 +748,10 @@
 
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.3"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.3"></script>
+
+
 
   
 
